@@ -1,0 +1,1 @@
+SELECT login,senha FROM usuarios WHERE login = 'luison'  

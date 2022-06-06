@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar a banca</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleTemp.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+ <!-- menu -->
+<body>
+
+    <header>
+        <nav>
+          <a class="logo" href=http://localhost/pfs_3tversionfinal/site/view/start.html>CASSINO</a>
+      
+          <div class="mobile-menu">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+              <div class="line3"> </div>
+      
+          </div>
+          <ul class="nav-list">
+          <li><a href="http://localhost/pfs_3tversionfinal/site/view/start.html">Início</a></li>
+          <li><a href="http://localhost/pfs_3tversionfinal/gerenciamentobanca">Banca</a></li>
+          <li><a href="http://localhost/pfs_3tversionfinal/cadastro3t/view/cad.php">Cadastrar</a></li>
+          <li><a href="http://localhost/pfs_3tversionfinal/logout.php">Sair / logout</a></li>
+      </ul>
+      </nav>
+      </header>
+ <!-- gerBanca -->
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form action="gerBanca.php" method="post" class="login" 
+                autocomplete="off">
+                <h2>Sistema de gerenciamento de banca</h2>
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" name="valBanca" placeholder="valor da banca">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="text" class="login__input" name="porcBanca" placeholder="porcentagem da banca">
+                    </div>
+                    <br>
+                    <!--******************************************************-->
+                    <button class="button login__submit">
+                        <span class="button__text">Calcular</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                <div class="social-login">
+                    <h3></h3>
+                    <div class="social-icons">
+
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background"> 
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span> 
+            </div>		
+        </div>
+    </div>
+    
+     
+    <!--Js-->
+     <script src="mobile-navbar.js"></script>
+     
+</body>
+</html>
